@@ -213,7 +213,8 @@ def main():
     try:
         #  Replace these with your RTSP camera URLs
         camera_sources = [
-            #ganti IP address kamera
+            "rtsp://admin:Admin1234@10.209.3.125:554"
+            
             
         ]
 
@@ -230,7 +231,7 @@ def main():
     except (ValueError, KeyboardInterrupt):
         print("Using default settings..")
         camera_sources = [
-            
+            "rtsp://admin:Admin1234@10.209.3.125:554"
         ]
         output_dir = 'captured_images'
         capture_interval = 2.0
@@ -243,4 +244,4 @@ def main():
         print(f"Error: {e}")
 
 if __name__ == "__main__":
-    main()
+    main()  
